@@ -1,0 +1,29 @@
+https://github.com/le12ambrosio/dio-java-basico.git
+import java.util.Scanner;
+
+public class ContaTerminal {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Por favor, digite o número da Conta:");
+        int numero 1245 = scanner.nextInt();
+        scanner.nextLine(); // Consumir a quebra de linha
+
+        System.out.println("Por favor, digite o número da Agência:");
+        String agencia 012= scanner.nextLine();
+
+        System.out.println("Por favor, digite o nome do Cliente:");
+        String nomeCliente  joana= scanner.nextLine();
+
+        System.out.println("Por favor, digite o saldo:");
+        double saldo 1412 = scanner.nextDouble();
+
+        String mensagem = "Olá " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " +
+                          agencia + ", conta " + numero + " e seu saldo " + saldo + " já está disponível para saque.";
+
+        System.out.println(mensagem);
+
+        scanner.close();
+    }
+}
